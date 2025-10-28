@@ -1,0 +1,111 @@
+🏁 /CSS-Modulo-1/5-proyecto-final/
+🎯 Objetivo:
+
+Comprobar que sabés enlazar correctamente un CSS externo, aplicar colores, tipografía y estructura visual limpia.
+💡 Este es tu “examen práctico” del módulo.
+
+🧠 1️⃣ Conceptos que validas
+Concepto	Qué demuestra
+✅ Enlace <link> al CSS externo	Entiendes cómo se conecta HTML + CSS
+🎨 Fondo y color	Dominas background-color y color
+✍️ Tipografía	Usas font-family y font-size
+💬 Selectores	Diferencias etiqueta, clase e ID
+⚙️ Especificidad	Sabes qué estilo tiene prioridad
+🧩 2️⃣ Estructura de carpetas
+/CSS-Modulo-1/5-proyecto-final/
+│
+├── index.html
+└── style.css
+
+💻 3️⃣ index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final - Módulo CSS 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Mi primera web con estilo</h1>
+  </header>
+
+  <main>
+    <p>Este es el párrafo principal de la página. Aquí probamos los estilos globales aplicados desde el archivo externo.</p>
+    
+    <p class="importante">Este párrafo usa una clase (.importante) para resaltar información clave.</p>
+    
+    <p id="especial">Y este usa un ID (#especial) para destacar algo único.</p>
+  </main>
+
+  <footer>
+    <p>Creado con garra por el Tigre 🐯 | 2025</p>
+  </footer>
+</body>
+</html>
+
+🎨 4️⃣ style.css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-color: #eef3f8;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #00aaff, #00ffaa);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Texto general */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Clase */
+.importante {
+  color: crimson;
+  font-weight: bold;
+}
+
+/* ID */
+#especial {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Pie */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+👁️‍🗨️ 5️⃣ Resultado esperado
+
+✅ Página ordenada, con fondo suave y tipografía moderna.
+✅ Encabezado con degradado y texto blanco.
+✅ Tres párrafos con colores distintos según selector.
+✅ Pie oscuro elegante.
+✅ Todo el CSS funcionando desde archivo externo.
+
+🧩 6️⃣ Checklist antes de subir a GitHub
+Paso	Verificación
+📁 Estructura limpia /CSS-Modulo-1/5-proyecto-final/	✅
+🔗 CSS enlazado con <link rel="stylesheet" href="style.css">	✅
+🎨 Estilos aplicados correctamente	✅
+🧠 Comentarios en el código (opcional)	✅
+☁️ Subido a GitHub (index.html + style.css)	✅
